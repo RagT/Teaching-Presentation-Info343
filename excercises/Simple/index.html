@@ -1,0 +1,28 @@
+<!-- This exercise will be very simple. The on syntax is not introduced yet. Provide list of animations -->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<title>Simple AniJS Exercise</title>
+	</head>
+	<body>
+		<h1 data-anijs="if: load, on: window, do: pulse animated">Exercise One</h1>
+		<div class="container center">
+			<div class="movetag" >Make me animate when the red square is clicked</div>
+			<div class="item red" 
+				data-anijs="if: click, do: flipInY animated, to: .movetag; 
+					if: mouseover, do: rollIn animated, to: .movetag">
+			</div>
+			<div class="item yellow hidden"
+				data-anijs="if: animationend, on: .movetag, do: $removeClass hidden">
+				<p>Now make that tag animate when the mouse is over the red square.</p>
+			</div>
+		</div>
+		<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
+		  <script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+	</body>
+</html>
