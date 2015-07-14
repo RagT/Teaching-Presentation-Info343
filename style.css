@@ -47,10 +47,15 @@
 }
 
 .accordion .item.open .content {
-  height: 100px;
+  height: 160px;
   padding: 20px;
 }
-
+/*
+#vegcontent {
+  height: 160px;
+  padding: 20px;
+}
+*/
 .orange{
   background-color: #FBB44C;
 }
