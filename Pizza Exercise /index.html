@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<title>AniJS Accordion</title>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>AniJS Accordion</title>
+</head>
+<body>
+ 
+<div class="accordion" 
+     data-anijs="if: click, on: .heading, do: $removeClass open, to: .open;
+                 if: click, on: .heading, do: $toggleClass open, to: $parent target;">
+
+  <div class="item" data-anijs="if:mouseenter, on: .heading, do: pulse animated, to: $children target">
+    <div class="heading blue">
+      <i class="fa fa-bell"></i>
+      <span>Pizza Sauce</span>
+      <i class="fa fa-chevron-circle-down"></i>
+    </div>
+      <div class="content">
+    <form>
+        <label><input type=checkbox name="marinara" />Marinara</label> <br>
+        <label><input type=checkbox name="basilpesto" />Basil Pesto</label> <br>
+        <label><input type=checkbox name="bbqsauce" />BBQ Sauce</label> <br>
+        <label><input type=checkbox name="sweetchili" />Sweet chili</label> <br>
+        <label><input type=checkbox name="nosauce"/>None</label> <br>
+      </form>
+  </div>
+</div>
+  
+  <div class="item">
+    <div class="heading orange">
+      <i class="fa fa-camera"></i>
+      <span>Vegetables & Fruits</span>
+      <i class="fa fa-chevron-circle-down"></i>
+    </div>
+    <div class="content" id="vegcontent">
+      <form>
+        <label><input type=checkbox name="mushrooms" />Mushrooms</label> <br>
+        <label><input type=checkbox name="olives" />Olives</label> <br>
+        <label><input type=checkbox name="greenpepper" />Green pepper</label> <br>
+        <label><input type=checkbox name="jalapenos" />Jalapenos</label> <br>
+        <label><input type=checkbox name="pineapples"/>Pineapples</label> <br>
+        <label><input type=checkbox name="tomatos"/>Tomatos</label> <br>
+        <label><input type=checkbox name="cilantro"/>Cilantro</label> <br>
+        <label><input type=checkbox name="rosemary"/>Rosemary</label> <br>
+        <label><input type=checkbox name="spinach"/>Spinach</label>
+      </form>
+    
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="heading pink">
+      <i class="fa fa-music"></i>
+      <span>Meat</span>
+      <i class="fa fa-chevron-circle-down"></i>
+    </div>
+    <div class="content">Meat here</div>
+  </div>
+  
+  
+    <div class="item">
+    <div class="heading green">
+      <i class="fa fa-music"></i>
+      <span>Rich stuff</span>
+      <i class="fa fa-chevron-circle-down"></i>
+    </div>
+    <div class="content">Add caviar, diamonds from Sierra Leone, 24 karat gold, 100 year old lobster, camel's hump on your pizza</div>
+  </div>
+  
+  
+</div>
+  <!-- End example -->
+  
+<div>
+  <p>Test here</p>
+</div>
+  
+<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
+<script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+ </body>
+ </html>
