@@ -1,3 +1,39 @@
+.hidden {
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 1.1s linear;
+	transition: opacity 1.1s linear;
+}
+
+.heading {
+	height: 50px;
+	font-size: 16px;
+	color: white;
+	padding: 10px;
+	width: 60%;
+}
+
+.content {
+	
+	font-size: 19px;
+	background: #eee;
+	width: auto;
+	
+	overflow: hidden;
+	height: 0;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.content.open {
+	height: 150px;
+	padding: 10px;
+	width: auto;
+	border-radius: 4px;
+}
+
+
+
 .animationlist {
 	margin: 10px;
 	font-size: 17px;
@@ -31,14 +67,12 @@ body {
 	color: #fefaf2;
 }
 
-.hidden {
-		visibility: hidden;
+.blue {
+	background-color: #6495ed;
 }
 
-.green {
-	background-color: green;
 
-}
+
 
 .yellow {
 	background-color: yellow;
@@ -46,6 +80,7 @@ body {
 
 .red {
 	background-color: #ff4c4c;
+	
 }
 
 .item {
