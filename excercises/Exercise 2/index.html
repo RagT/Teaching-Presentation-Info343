@@ -1,0 +1,63 @@
+<!-- Removing/adding/toggling classes-->
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+		<link href="style.css" type="text/css" rel="stylesheet"/>
+		<title>AniJS Exercise 2</title>
+	</head>
+	<body>
+		<h1 data-anijs="if: load, on: window, do: pulse animated">Exercise Two</h1>
+		<div class="container center">
+			<div class="movetag" >Click me to get a sliding menu underneath me to open. Use $toggleClass</div>
+			<div class="content">
+
+				That was easy! <br>Now make your own CSS to find a way to get the red square to disappear when the yellow square is clicked. <br>
+				[Try using $addClass] <br>
+				If you're feeling <span class="frisky">frisky</span>, look up how to use transitions in CSS to get the red square to fade away.
+
+			</div>
+
+		
+				
+				
+		
+			<div class="item red">
+			</div>
+
+			<div class="item yellow">
+			</div>
+
+		</div>
+
+		<!-- Put your code here! -->
+		<span style="display: hidden"
+			data-anijs="if: click, on: .item.red, do: flipInX animated, to: .movetag;
+			if: load, on: window, do: tada animated infinite, to: .frisky;
+			if: click, on: .movetag, do: $toggleClass open, to: .content;
+			if: click, on: .item.yellow, do: $addClass hidden, to: .item.red" ></span>
+		
+
+		<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
+		 <script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+	</body>
+</html>
+
+
+<!--
+	Answer: if: click, on: .movetag, do: $toggleClass open, to: .content
+
+	if: click, on: .item.yellow, do: $addClass hidden, to: .item.red
+
+	CSS:
+	.hidden {
+	display: none;
+	opacity: 0;
+	-webkit-transition: opacity 1.1s linear;
+	transition: opacity 1.1s linear;
+	}
+			
+-->

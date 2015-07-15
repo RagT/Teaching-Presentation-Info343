@@ -13,16 +13,29 @@
 		<h1 data-anijs="if: load, on: window, do: pulse animated">Exercise One</h1>
 		<div class="container center">
 			<div class="movetag" >Make me animate when the red square is clicked</div>
+				<div class="animationlist">
+					Here is a link to the list of animation names you can use.
+					<a href="http://anicollection.github.io/#/">List of animations</a>
+				</div>
 			<div class="item red" 
 				data-anijs="if: click, do: flipInY animated, to: .movetag; 
-					if: mouseover, do: rollIn animated, to: .movetag">
+					">
 			</div>
+
 			<div class="item yellow hidden"
 				data-anijs="if: animationend, on: .movetag, do: $removeClass hidden">
-				<p>Now make that tag animate when the mouse is over the red square.</p>
+				<p>Now make that gray tag animate when the mouse is over the red square.</p>
 			</div>
 		</div>
 		<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
 		  <script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
 	</body>
 </html>
+
+
+<!--
+	Answer: <div class="item red" 
+				data-anijs="if: click, do: flipInY animated, to: .movetag; 
+					if: mouseover, do: rollIn animated, to: .movetag">
+			</div>
+-->
