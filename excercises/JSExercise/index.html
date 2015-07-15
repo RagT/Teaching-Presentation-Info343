@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Exercise</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Exercise 3</h1>
+		</header>
+		<div class="row center">
+			<form class="col-md-4 col-md-offset-4" role="form">
+				<h3 id="form-heading">Log-In</h3>
+			    <div class="form-group">
+			      <label for="username">Username</label>
+			      <input type="text" class="form-control" id="username">
+			    </div>
+			    <div class="form-group">
+			      <label for="pwd">Password:</label>
+			      <input type="password" class="form-control" id="pwd">
+			    </div>
+			    <div class="checkbox">
+			      <label><input id="checkbox" type="checkbox" data-anijs="if: click, on: #checkbox, do: bounce animated, to: #checkbox"> Remember me</label>
+			    </div>
+			    <a id="submit" href="#" data-anijs="if: click, on: #submit, do: bounceOut animated, to: form, before: checkInput, after: reset" 
+				class="btn btn-primary">Submit</a>
+			</form>
+		</div>
+
+		<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
+		<script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script src='js/animation.js'></script>
+	</body>
+</html>

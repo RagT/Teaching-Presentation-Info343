@@ -1,0 +1,25 @@
+.center{
+	margin: auto;
+	margin-top: 13%;
+}
+
+header{
+	background-color: #FAFAD2;
+	margin-top: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+form{
+	background-color: #FAFAD2;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+body{
+	background-color: #D3D3D3;
+}
+
+h3{
+	text-align: center;
+}
