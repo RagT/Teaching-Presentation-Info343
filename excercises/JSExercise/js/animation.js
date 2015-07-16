@@ -12,6 +12,6 @@ animationHelper.checkInput = function(e, animationContext){
 }
 
 animationHelper.reset = function(e, animationContext){
-	$('h1').text('You have succesfully logged in.');
+	$('h1').text('You have succesfully logged in as ' + $('#username').val() + '.');
 	$('header').css('background-color', 'green');
 }
